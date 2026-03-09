@@ -2,6 +2,7 @@ body{
   background:#fbfcee;
   margin: 0px;
   color: #9a8c65;
+  width: 100%
 }
 
 h1 {
@@ -107,10 +108,13 @@ p{
     grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
     gap:30px;
     justify-items:center;
+    margin-top: 60px;
 }
+
 .footer{
     background-image: linear-gradient(to bottom, #143062, #44608f);
     color: #fbfcee;
+    width: 100%
 }
 
 h2 {
@@ -254,3 +258,4 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
