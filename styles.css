@@ -233,4 +233,39 @@ h2 {
     grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
     gap:30px;
     justify-items:center;
+
+}
+
+
+@media (max-width: 768px){
+
+    .header{
+        flex-direction: column;   /* stack elements */
+        text-align: center;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .first{
+        width: 100%;
+    }
+
+    .second{
+        width: 100%;
+    }
+
+    .second img{
+        width: 70%;   /* smaller image for phone */
+        height: auto;
+    }
+
+    .apps{
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        font-size: 300%;   /* smaller title on phone */
+    }
+
 }
