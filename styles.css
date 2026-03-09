@@ -1,8 +1,13 @@
-body{
+* {
+  box-sizing: border-box;
+}
+
+body {
   background:#fbfcee;
-  margin: 0px;
-  color: #9a8c65;
-  width: 100%
+  margin:0;
+  color:#9a8c65;
+  width:100%;
+  overflow-x:hidden;
 }
 
 h1 {
@@ -213,14 +218,15 @@ h2 {
     margin:15px;
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
-    .header{
-        flex-direction: column;   /* stack elements */
-        text-align: center;
-        gap: 40px;
-        padding: 0 20px;
-    }
+  .header{
+    flex-direction: column;
+    text-align:center;
+    gap:40px;
+    padding:0 20px;
+    margin:40px auto;   /* smaller margin */
+  }
 
     .first{
         width: 100%;
@@ -257,5 +263,10 @@ h2 {
   .container {
     grid-template-columns: 1fr;
   }
+}
+
+img{
+  max-width:100%;
+  height:auto;
 }
 
