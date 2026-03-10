@@ -37,31 +37,27 @@ p{
 
 .header{
     width:100%;
+    max-width:1100px;
+    margin:60px auto;
     display:flex;
     gap:20px;
-    justify-content:center;
     align-items:center;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 .first{
     flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 60%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 }
 
 .second{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .apps{
@@ -219,9 +215,15 @@ h2 {
 }
 
 .prev{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.prev-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:30px;
+    justify-items:center;
 }
 
 .prev .prevev{
@@ -273,4 +275,5 @@ h2 {
 body{
     padding: 0 10px;
 }
+
 
